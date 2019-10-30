@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F98E4E70-EDBD-369A-82E7-36CD9593168F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\olejk\Desktop\mp2-lab2-matrix\include;C:\Users\olejk\Desktop\mp2-lab2-matrix\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\olejk\Desktop\mp2-lab2-matrix\include;C:\Users\olejk\Desktop\mp2-lab2-matrix\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\67b1adc40c481bcc97c8e1ad67751975\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+F:\Cmake\bin\cmake.exe -SC:/Users/olejk/Desktop/mp2-lab2-matrix -BC:/Users/olejk/Desktop/mp2-lab2-matrix/sln --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/olejk/Desktop/mp2-lab2-matrix/sln/matrix.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\olejk\Desktop\mp2-lab2-matrix\CMakeLists.txt;C:\Users\olejk\Desktop\mp2-lab2-matrix\gtest\CMakeLists.txt;C:\Users\olejk\Desktop\mp2-lab2-matrix\include\CMakeLists.txt;C:\Users\olejk\Desktop\mp2-lab2-matrix\samples\CMakeLists.txt;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\3.15.3\CMakeCCompiler.cmake;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\3.15.3\CMakeCXXCompiler.cmake;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\3.15.3\CMakeSystem.cmake;C:\Users\olejk\Desktop\mp2-lab2-matrix\test\CMakeLists.txt;F:\Cmake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;F:\Cmake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;F:\Cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeCXXCompiler.cmake.in;F:\Cmake\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp;F:\Cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCXXCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;F:\Cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;F:\Cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeTestCXXCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;F:\Cmake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows-Determine-CXX.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\generate.stamp;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\include\CMakeFiles\generate.stamp;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\samples\CMakeFiles\generate.stamp;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\gtest\CMakeFiles\generate.stamp;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+F:\Cmake\bin\cmake.exe -SC:/Users/olejk/Desktop/mp2-lab2-matrix -BC:/Users/olejk/Desktop/mp2-lab2-matrix/sln --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/olejk/Desktop/mp2-lab2-matrix/sln/matrix.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\olejk\Desktop\mp2-lab2-matrix\CMakeLists.txt;C:\Users\olejk\Desktop\mp2-lab2-matrix\gtest\CMakeLists.txt;C:\Users\olejk\Desktop\mp2-lab2-matrix\include\CMakeLists.txt;C:\Users\olejk\Desktop\mp2-lab2-matrix\samples\CMakeLists.txt;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\3.15.3\CMakeCCompiler.cmake;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\3.15.3\CMakeCXXCompiler.cmake;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\3.15.3\CMakeSystem.cmake;C:\Users\olejk\Desktop\mp2-lab2-matrix\test\CMakeLists.txt;F:\Cmake\share\cmake-3.15\Modules\CMakeCCompiler.cmake.in;F:\Cmake\share\cmake-3.15\Modules\CMakeCCompilerABI.c;F:\Cmake\share\cmake-3.15\Modules\CMakeCInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeCXXCompiler.cmake.in;F:\Cmake\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp;F:\Cmake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeCompilerIdDetection.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCXXCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCompileFeatures.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCompilerABI.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineCompilerId.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineRCCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeDetermineSystem.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeFindBinUtils.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeParseImplicitIncludeInfo.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeParseImplicitLinkInfo.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeRCCompiler.cmake.in;F:\Cmake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeSystem.cmake.in;F:\Cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeTestCCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeTestCXXCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeTestCompilerCommon.cmake;F:\Cmake\share\cmake-3.15\Modules\CMakeTestRCCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\ARMClang-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\TI-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;F:\Cmake\share\cmake-3.15\Modules\CompilerId\VS-10.vcxproj.in;F:\Cmake\share\cmake-3.15\Modules\Internal\FeatureTesting.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows-Determine-CXX.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\Windows.cmake;F:\Cmake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\CMakeFiles\generate.stamp;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\include\CMakeFiles\generate.stamp;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\samples\CMakeFiles\generate.stamp;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\gtest\CMakeFiles\generate.stamp;C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

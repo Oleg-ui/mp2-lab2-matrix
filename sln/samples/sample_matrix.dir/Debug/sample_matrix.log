@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/olejk/Desktop/mp2-lab2-matrix/samples/CMakeLists.txt
+  sample_matrix.cpp
+c:\users\olejk\desktop\mp2-lab2-matrix\include\utmatrix.h(299): warning C4715: TMatrix<int>::operator=: значение возвращается не при всех путях выполнения
+  sample_matrix.vcxproj -> C:\Users\olejk\Desktop\mp2-lab2-matrix\sln\bin\sample_matrix.exe
